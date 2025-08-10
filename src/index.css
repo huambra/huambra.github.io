@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{ color-scheme: dark; }
+html, body, #root { height: 100%; }
+
+@layer utilities {
+  .typo-h1 { @apply text-[49px] leading-[54px] tracking-[-0.0625em] font-bold; }
+  .typo-h2 { @apply text-[39px] leading-[43px] tracking-[-0.05em] font-bold; }
+  .typo-h3 { @apply text-[31px] leading-[40px] tracking-[-0.03125em] font-bold; }
+  .typo-h4 { @apply text-[25px] leading-[33px] tracking-[-0.025em] font-bold; }
+  .typo-h5 { @apply text-[20px] leading-[30px] tracking-[-0.00625em] font-bold; }
+  .typo-h6 { @apply text-[18px] leading-[27px] font-bold; }
+  .typo-body { @apply text-[16px] leading-[24px] tracking-[0.01em]; }
+  .typo-bodyLg { @apply text-[17px] leading-[26px] tracking-[0.01em]; }
+  .typo-link { @apply text-[15px] leading-[23px] tracking-[0.01em] underline underline-offset-4 decoration-dotted; }
+  .typo-caption { @apply text-[14px] leading-[22px] tracking-[0.01em]; }
+}
